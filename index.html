@@ -8,30 +8,38 @@
 		<div class="main-wrapper">
 			<h1 class="main-title">todos</h1>
 			<div id="content">
-				<div class="note-input">
-					<img src="icons/select-all.png">
+				<div class="note-input" aria-label="Добавление заметок">
+					<img src="icons/select-all.png" alt="Выбрать всё">
 					<input type="text" placeholder="What needs to be done?" name="new_note">
 				</div>
-				<div class="notes">
-						<div class="note-item">
-							<img src="icons/completed.png">
+				<div class="notes" aria-label="Список заметок">
+						<div class="note-item" aria-label="Заметка">
+							<div class="note-item-checkbox" aria-label="Выбор состояния">
+								<img src="icons/completed.png" alt="Завершено">
+							</div>
 							<div class="note-item-text">HTML</div>
-							<img src="icons/close.png">
+							<div class="note-item-delete" aria-label="Удаление заметки">
+								<img src="icons/close.png" alt="Удалить заметку">
+							</div>
 						</div>
-						<div class="note-item">
-							<img src="icons/completed.png">
+						<div class="note-item" aria-label="Заметка">
+							<div class="note-item-checkbox" aria-label="Выбор состояния">
+								<img src="icons/completed.png" alt="Завершено">
+							</div>
 							<div class="note-item-text">CS</div>
-							<img src="icons/close.png">
+							<div class="note-item-delete" aria-label="Удаление заметки">
+								<img src="icons/close.png" alt="Удалить заметку">
+							</div>
 						</div>
 				</div>
-				<div class="information-bar">
-					<div class="items-left"></div>
-					<div class="filters">
+				<div class="info-bar" aria-label="Информационное меню">
+					<div class="items-left" aria-label="Ещё не выполненых задач"></div>
+					<div class="filters" aria-label="Фильтры">
 						<a class="filter" href="#">All</a>
 						<a class="filter" href="#">Active</a>
 						<a class="filter" href="#">Completed</a>
 					</div>
-					<div class="message"></div>
+					<div class="info-msg" aria-label="Уведомлени о действиях"></div>
 				</div>
 			</div>
 		</div>
