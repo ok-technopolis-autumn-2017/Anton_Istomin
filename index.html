@@ -6,38 +6,42 @@
 	</head>
 	<body>
 		<div class="main-wrapper">
-			<h1 class="main-title">todos</h1>
+			<div class="header-container">
+				<h1 class="main-title">todos</h1>
+			</div>
 			<div id="content">
 				<div class="note-input" aria-label="Добавление заметок">
-					<img src="icons/select-all.png" alt="Выбрать всё">
+					<button class="note-remove-done" aria-label="Удалить выполненные заметки">
+							<img src="icons/select-all.png" alt="↓">
+					</button>
 					<input type="text" placeholder="What needs to be done?" name="new_note">
 				</div>
 				<div class="notes" aria-label="Список заметок">
 						<div class="note-item" aria-label="Заметка">
-							<div class="note-item-checkbox" aria-label="Выбор состояния">
-								<img src="icons/completed.png" alt="Завершено">
-							</div>
-							<div class="note-item-text">HTML</div>
-							<div class="note-item-delete" aria-label="Удаление заметки">
-								<img src="icons/close.png" alt="Удалить заметку">
-							</div>
+							<span class="note-item-checkbox" aria-label="Выбор состояния">
+									<input type="checkbox" id="HTML" aria-label="Отметить как выполненную"/>
+									<label for="HTML">HTML</label>
+							</span>
+							<button class="note-item-delete" aria-label="Удалить заметку">
+								<img src="icons/close.png" alt="X">
+							</button>
 						</div>
 						<div class="note-item" aria-label="Заметка">
-							<div class="note-item-checkbox" aria-label="Выбор состояния">
-								<img src="icons/completed.png" alt="Завершено">
-							</div>
-							<div class="note-item-text">CS</div>
-							<div class="note-item-delete" aria-label="Удаление заметки">
-								<img src="icons/close.png" alt="Удалить заметку">
-							</div>
+							<span class="note-item-checkbox" aria-label="Выбор состояния">
+									<input type="checkbox" id="CS" aria-label="Отметить как выполненную"/>
+									<label for="CS">CS</label>
+							</span>
+							<button class="note-item-delete" aria-label="Удалить заметку">
+								<img src="icons/close.png" alt="X">
+							</button>
 						</div>
 				</div>
 				<div class="info-bar" aria-label="Информационное меню">
 					<div class="items-left" aria-label="Ещё не выполненых задач"></div>
 					<div class="filters" aria-label="Фильтры">
-						<a class="filter-item" href="#">All</a>
-						<a class="filter-item" href="#">Active</a>
-						<a class="filter-item" href="#">Completed</a>
+						<button class="filter-button" aria-label="Показать все">All</button>
+						<button class="filter-button" aria-label="Показать невыполненные">Active</button>
+						<button class="filter-button" aria-label="Показать выполненные">Completed</button>
 					</div>
 					<div class="info-msg" aria-label="Уведомление о действии"></div>
 				</div>
