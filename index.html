@@ -11,39 +11,43 @@
 			</div>
 			<div id="content">
 				<div class="note-input" aria-label="Добавление заметок">
-					<button class="note-remove-done" aria-label="Удалить выполненные заметки">
-							<img src="icons/select-all.png" alt="↓">
+					<button class="note-remove-done" aria-label="Отметить все как выполненные">
+						<img src="icons/select-all.png" alt="↓">
 					</button>
 					<input type="text" placeholder="What needs to be done?" name="new_note">
 				</div>
 				<div class="notes" aria-label="Список заметок">
-						<div class="note-item" aria-label="Заметка">
-							<span class="note-item-checkbox" aria-label="Выбор состояния">
-									<input type="checkbox" id="HTML" aria-label="Отметить как выполненную"/>
-									<label for="HTML">HTML</label>
-							</span>
-							<button class="note-item-delete" aria-label="Удалить заметку">
-								<img src="icons/close.png" alt="X">
-							</button>
-						</div>
-						<div class="note-item" aria-label="Заметка">
-							<span class="note-item-checkbox" aria-label="Выбор состояния">
-									<input type="checkbox" id="CS" aria-label="Отметить как выполненную"/>
-									<label for="CS">CS</label>
-							</span>
-							<button class="note-item-delete" aria-label="Удалить заметку">
-								<img src="icons/close.png" alt="X">
-							</button>
-						</div>
-				</div>
-				<div class="info-bar" aria-label="Информационное меню">
-					<div class="items-left" aria-label="Ещё не выполненых задач"></div>
-					<div class="filters" aria-label="Фильтры">
-						<button class="filter-button" aria-label="Показать все">All</button>
-						<button class="filter-button" aria-label="Показать невыполненные">Active</button>
-						<button class="filter-button" aria-label="Показать выполненные">Completed</button>
+					<div class="note-item" aria-label="Заметка">
+						<span class="note-item-checkbox" aria-label="Выбор состояния">
+							<input type="checkbox" id="HTML" aria-label="Отметить как выполненную"/>
+							<textarea class="note-item-text">
+								HTML
+							</textarea>
+						</span>
+						<button class="note-item-delete" aria-label="Удалить заметку">
+							<img src="icons/close.png" alt="X">
+						</button>
 					</div>
-					<div class="info-msg" aria-label="Уведомление о действии"></div>
+					<div class="note-item" aria-label="Заметка">
+						<span class="note-item-checkbox" aria-label="Выбор состояния">
+							<input type="checkbox" id="CS" aria-label="Отметить как выполненную"/>
+							<textarea class="note-item-text">
+								CS
+							</textarea>
+						</span>
+						<button class="note-item-delete" aria-label="Удалить заметку">
+							<img src="icons/close.png" alt="X">
+						</button>
+					</div>
+				</div>
+				<div class="action-bar" aria-label="Список действий">
+					<div class="items-left" aria-label="Ещё не выполненых задач">2 items left</div>
+					<div class="filters" aria-label="Фильтры">
+						<button class="filter-button" data-filter="all" aria-label="Показать все">All</button>
+						<button class="filter-button" data-filter="notcompleted" aria-label="Показать невыполненные">Active</button>
+						<button class="filter-button" data-filter="completed" aria-label="Показать выполненные">Completed</button>
+					</div>
+						<button class="clear-completed-button" aria-label="Показать выполненные">Clear completed</button>
 				</div>
 			</div>
 		</div>
